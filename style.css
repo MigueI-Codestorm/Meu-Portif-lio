@@ -538,3 +538,92 @@ body{
     font-size: 0.9rem;
   }
 }
+
+/* ========================= */
+/* RESPONSIVIDADE - MOBILE */
+/* ========================= */
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+    padding: 1rem;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    perspective: none;
+  }
+
+  /* Esconde a capa no celular */
+  .cover {
+    display: none;
+  }
+
+  /* Força o livro a virar site "normal" */
+  .book {
+    flex-direction: column;
+    align-items: center;
+    perspective: none;
+  }
+
+  .book .book-page {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    margin-bottom: 2rem;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .book-page.page-right,
+  .book-page.page-left,
+  .book-page .page-front,
+  .book-page .page-back {
+    position: relative;
+    transform: none !important;
+    padding: 1.5rem;
+  }
+
+  /* Ajustes de perfil */
+  .profile-page img {
+    max-width: 120px;
+  }
+
+  .profile-page h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .profile-page h3 {
+    font-size: 1.2rem;
+  }
+
+  .profile-page p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  /* Serviços ficam empilhados */
+  .services-box {
+    flex-direction: column;
+  }
+
+  .services-box .services-content {
+    flex: 1 1 100%;
+  }
+
+  /* Habilidades ficam menores */
+  .skills-content .content span {
+    width: 5rem;
+    height: 4rem;
+    font-size: 0.85rem;
+  }
+
+  /* Corrige botões de navegação */
+  .nextprev-btn,
+  .back-profile {
+    display: none;
+  }
+}
