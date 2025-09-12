@@ -492,65 +492,6 @@ body{
     width: 100%;
     height: auto;
     padding: 1rem;
-  }
-
-  .book {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .book .book-page {
-    position: relative;
-    width: 100%;
-    height: auto;
-    box-shadow: none;
-    margin-bottom: 1.5rem;
-  }
-
-  .cover {
-    display: none;
-  }
-
-  .profile-page img {
-    max-width: 120px;
-  }
-
-  .profile-page h1 {
-    font-size: 1.8rem;
-  }
-
-  .profile-page h3 {
-    font-size: 1.2rem;
-  }
-
-  .profile-page p,
-  .workeduc-content p {
-    font-size: 1rem;
-  }
-
-  .services-box .services-content {
-    flex: 1 1 100%;
-  }
-
-  .skills-content .content span {
-    width: 5rem;
-    height: 4rem;
-    font-size: 0.9rem;
-  }
-
-/* ========================= */
-/* RESPONSIVIDADE - MOBILE */
-/* ========================= */
-@media (max-width: 768px) {
-  body {
-    overflow: auto;
-    padding: 1rem;
-  }
-
-  .wrapper {
-    width: 100%;
-    height: auto;
-    padding: 1rem;
     perspective: none;
   }
 
@@ -620,10 +561,9 @@ body{
     font-size: 0.85rem;
   }
 
-  /* Corrige botões de navegação */
+  /* Corrige botões de navegação no celular */
   .nextprev-btn,
   .back-profile {
-    display: none;
+    display: none !important;
   }
 }
-
