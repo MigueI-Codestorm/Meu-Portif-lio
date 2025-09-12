@@ -270,23 +270,20 @@ body{
 .services-box{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* distribui melhor os quadros */
-    gap: 1rem; /* reduzi o gap para evitar ultrapassar */
+    justify-content: space-between;
+    gap: 1rem;
     margin-top: 2rem;
 }
 
 .services-box .services-content{
-    flex: 1 1 calc(50% - 1rem); /* garante dois quadros por linha sem ultrapassar */
+    flex: 1 1 calc(50% - 1rem);
     border: var(--border);
     border-radius: .5rem;
     padding: .8rem .5rem 1rem;
     text-align: center;
     transition: .3s ease;
-    height: auto; /* altura automática */
+    height: auto;
     box-sizing: border-box;
-}
-.services-box .services-content {
-    /* ... outras propriedades existentes ... */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -315,7 +312,7 @@ body{
 }
 
 
-/* skilss box */
+/* skills box */
 .skills-box{
     display: flex;
     flex-wrap: wrap;
@@ -364,7 +361,7 @@ body{
 .portfolio-box .img-box {
     display: flex;
     width: 100%;
-    height: auto; /* Mude de 15rem para 'auto' */
+    height: auto;
     border-radius: .5rem;
     border: var(--border);
     overflow: hidden;
@@ -372,13 +369,13 @@ body{
 
 .portfolio-box .img-box img {
     width: 100%;
-    height: auto; /* Mude de 100% para 'auto' */
-    object-fit: cover; /* Pode manter 'cover' ou 'contain' */
+    height: auto;
+    object-fit: cover;
     transition: .5s ease;
 }
 
 .portfolio-box .img-box:hover img {
-    transform: scale(1.1); /* Mantenha o efeito de zoom */
+    transform: scale(1.1);
 }
 .portfolio-box .info-box{
     margin: 1rem 0 1.5rem;
@@ -480,4 +477,64 @@ body{
     opacity: 1;
     transform: translateX(-50%) scale(1);
     top: -1.8rem;
+}
+
+/* ========================= */
+/* RESPONSIVIDADE - MOBILE */
+/* ========================= */
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+    padding: 1rem;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .book {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book .book-page {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    margin-bottom: 1.5rem;
+  }
+
+  .cover {
+    display: none;
+  }
+
+  .profile-page img {
+    max-width: 120px;
+  }
+
+  .profile-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .profile-page h3 {
+    font-size: 1.2rem;
+  }
+
+  .profile-page p,
+  .workeduc-content p {
+    font-size: 1rem;
+  }
+
+  .services-box .services-content {
+    flex: 1 1 100%;
+  }
+
+  .skills-content .content span {
+    width: 5rem;
+    height: 4rem;
+    font-size: 0.9rem;
+  }
 }
