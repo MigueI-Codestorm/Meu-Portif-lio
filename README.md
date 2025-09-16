@@ -26,9 +26,13 @@ Este portfólio foi desenvolvido com **HTML, CSS e JavaScript**, com foco em ser
 ## 📂 Estrutura do repositório
 
 ├── index.html # Estrutura principal do site
+
 ├── style.css # Estilos e layout
+
 ├── script.js # Interatividade e comportamentos
+
 ├── logo.png # Logotipo
+
 ├── website3.png # Captura do site
 
 
